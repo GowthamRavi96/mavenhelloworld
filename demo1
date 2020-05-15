@@ -1,0 +1,20 @@
+grade1 = float( input("Enter the grade of first test: ") )
+grade2 = float( input("Enter the grade of second test: ") )
+absences =int( input("Type the number of absence : ") )
+total_class = int (input("Enter the Total number of classes: ") )
+
+avg_grade  = (grade1+grade2)/2
+attendance = (total_class-absences)/total_class
+
+
+if (avg_grade >=6):
+    if(attendance >=0.8):
+        print("The Student has been passed.")
+    else:
+        print("The Student has been failed due to attendance is lower than 80%.")
+elif (attendance >=0.8):
+    print("The Student has failed due to an average grade lower than 6.0.")
+else:
+    print("The Student has failed due to an average grade lower than 6.0 andattendance is lower than 80%.")
+
+
